@@ -1,0 +1,41 @@
+# Dependencies (largest footprint)
+node_modules/
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Derived wallet output (private keys; grows with COUNT)
+derived-wallets.json
+derived-wallets*.json
+*.wallet.json
+
+# Build / compile output
+dist/
+build/
+*.tsbuildinfo
+
+# Logs and temp files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.tmp/
+temp/
+tmp/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Optional local overrides
+*.local
